@@ -8,10 +8,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import OrdinaryVdo from "../../../images/m_about1.mp4";
 import OrdinaryGif2 from "../../../images/about2.gif";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
 import OridinarySectinTitle from "./OridinarySectinTitle/OridinarySectinTitle";
+import { Link } from "react-router-dom";
 
 const OrdinarySlider = () => {
   const [isChange, setChange] = useState(true);
@@ -94,11 +96,24 @@ const OrdinarySlider = () => {
       >
         <SwiperSlide>
           <div className="w-[500px] h-[470px] rounded-full">
-            <img
-              className="rounded-full w-[500px] h-[470px]"
-              src={OrdinaryGif2}
-              alt="Gif Img"
-            />
+            <video
+              className="rounded-full w-[500px] h-[470px] scale-150"
+              autoPlay
+              muted
+              loop
+              playsinline
+            >
+              <source src={OrdinaryVdo} type="video/mp4" />
+            </video>
+            <em className="text-center block mt-[-60px] relative z-10">
+              <a
+                href="https://www.stratuscent.com/"
+                rel="noreferrer"
+                target={"_blank"}
+              >
+                Engineered by <u>Stratuscent inc.</u>
+              </a>
+            </em>
           </div>
         </SwiperSlide>
         <SwiperSlide>
