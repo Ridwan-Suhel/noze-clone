@@ -17,8 +17,6 @@ const MattersSection = () => {
         </div>
         {/* matters slider */}
         <div className="h-screen overflow-hidden">
-          {/* https://codepen.io/ncer/pen/xpqemZ */}
-          {/* https://codesandbox.io/s/5wchj3?file=/src/App.jsx */}
           <MattersSectionSlide />
         </div>
       </div>

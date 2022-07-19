@@ -4,6 +4,7 @@ import BreakMoldSection from "./BreakMoldSection/BreakMoldSection";
 import ConquerSection from "./Conquer/ConquerSection";
 import Hero from "./Hero/Hero";
 import MattersSection from "./MattersSection/MattersSection";
+import MoreImportantSection from "./MoreImportantSection/MoreImportantSection";
 import OrdinarySection from "./Ordinary/OrdinarySection";
 
 const Overview = () => {
@@ -15,6 +16,8 @@ const Overview = () => {
       <ConquerSection />
       <BreakMoldSection />
       <MattersSection />
+      <MoreImportantSection />
+      <section className="w-full h-screen"></section>
     </main>
   );
 };

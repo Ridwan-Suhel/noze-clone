@@ -90,7 +90,6 @@ const OrdinarySlider = () => {
           swiper.navigation.update();
         }}
         onSlideChange={() => {
-          console.log("slide change", isChange);
           setChange(!isChange);
         }}
       >

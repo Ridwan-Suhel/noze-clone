@@ -5,6 +5,23 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
 
+// var scrollObject = {};
+// window.onscroll = getScrollPosition;
+
+// function getScrollPosition() {
+//   scrollObject = {
+//     x: window.pageXOffset,
+//     y: window.pageYOffset,
+//   };
+//   // If you want to check distance
+//   if (scrollObject.y > 200) {
+//     // add class
+//     console.log("add class");
+//   } else {
+//     console.log("remove class");
+//   }
+// }
+
 const Header = () => {
   const [open, setOpen] = useState(true);
   let navigate = useNavigate();

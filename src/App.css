@@ -11,3 +11,9 @@ body {
 .dropdown-body.open {
   display: block;
 }
+.title-h2 {
+  font-size: 48px;
+  line-height: 48px;
+  color: #210545;
+  font-weight: 500;
+}
