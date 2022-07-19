@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
-import {
-  BeakerIcon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-} from "@heroicons/react/solid";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -19,11 +15,11 @@ const Header = () => {
     <header className="border-[#d0cbe6] border-b min-h-[65px] flex items-center px-6 md:px-0">
       <div className="container mx-auto">
         <nav className="main-nav flex items-center gap-8 justify-between">
-          <Link to="/" className="w-20 md:w-auto">
+          <Link to="/" className="">
             <img
               src={logo}
               alt="Noze Logo"
-              className="w-20 object-cover md:w-auto"
+              className="w-[106px] object-cover md:w-auto"
             />
           </Link>
           <div className="hidden nav-item-wrapper lg:flex items-center justify-between w-full">

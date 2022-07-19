@@ -1,7 +1,12 @@
 import React from "react";
+import Hero from "./Hero/Hero";
 
 const Overview = () => {
-  return <div>I am overview</div>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default Overview;

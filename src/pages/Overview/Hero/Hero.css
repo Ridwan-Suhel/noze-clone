@@ -1,0 +1,20 @@
+.hero-img-wrapper {
+  position: relative;
+}
+.hero-img {
+  animation: animate 1.25s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+}
