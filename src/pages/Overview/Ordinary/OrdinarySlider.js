@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./OrdinarySection.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -22,7 +23,11 @@ const OrdinarySlider = () => {
       <div className="ordinary-text-content-wrapper w-3/6">
         <OridinarySectinTitle />
         {/* ordinary section desktop left side */}
-        <div className="mb-14">
+        <div
+          className={`mb-14 nasa-insp pl-8 ordinary-slide-btn ${
+            isChange ? "ordinary-slide-anim-btn" : ""
+          }`}
+        >
           <div
             ref={prevRef}
             className="text-[18px] text-[#210545] font-bold cursor-pointer"
@@ -40,7 +45,11 @@ const OrdinarySlider = () => {
             ""
           )}
         </div>
-        <div>
+        <div
+          className={`eng-think ordinary-slide-btn pl-8 ${
+            isChange ? "" : "ordinary-slide-anim-btn"
+          }`}
+        >
           <div
             ref={nextRef}
             className="text-[18px] text-[#210545] font-bold cursor-pointer"
