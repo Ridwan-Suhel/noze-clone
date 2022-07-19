@@ -40,7 +40,7 @@ const OrdinarySlider = () => {
             <p className="text-[#6b5a78] mt-4">
               NOZE is powered by a single sensor built on years of NASA
               innovation. Our technology raises the bar to new heights by using
-              the digital sense of smell to keep track of the air you’re
+              the digital sense of smell to keep track of the air you're
               breathing.
             </p>
           ) : (

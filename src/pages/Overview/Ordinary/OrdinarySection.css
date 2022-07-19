@@ -20,7 +20,7 @@
   width: 2px;
   height: 100%;
   background: #d0cbe6;
-  animation: animSlideBar 4.5s ease-in-out infinite;
+  animation: animSlideBar 5s ease-in-out infinite;
 }
 @keyframes animSlideBar {
   0% {
