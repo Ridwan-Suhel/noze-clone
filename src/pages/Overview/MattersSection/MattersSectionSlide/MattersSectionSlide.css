@@ -1,0 +1,27 @@
+.swiper-pagination {
+  position: absolute;
+  top: 200px !important;
+  left: 0px !important;
+  width: 200px;
+}
+.swiper-pagination-bullet {
+  border-radius: 0;
+  width: auto;
+  height: 30px;
+  text-align: left;
+  font-size: 19px;
+  line-height: 34px;
+  color: #d0cbe6;
+  opacity: 1;
+  background: transparent !important;
+  margin-bottom: 10px !important;
+}
+.swiper-pagination-bullet:hover {
+  color: #2c0a59;
+}
+.swiper-pagination-bullet-active {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #2c0a59;
+}
