@@ -6,6 +6,7 @@ import Hero from "./Hero/Hero";
 import MattersSection from "./MattersSection/MattersSection";
 import MoreImportantSection from "./MoreImportantSection/MoreImportantSection";
 import OrdinarySection from "./Ordinary/OrdinarySection";
+import PowerSection from "./PowerSection/PowerSection";
 
 const Overview = () => {
   return (
@@ -17,6 +18,7 @@ const Overview = () => {
       <BreakMoldSection />
       <MattersSection />
       <MoreImportantSection />
+      <PowerSection />
       <section className="w-full h-screen"></section>
     </main>
   );
