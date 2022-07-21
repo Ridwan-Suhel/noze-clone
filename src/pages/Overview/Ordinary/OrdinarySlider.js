@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./OrdinarySection.css";
@@ -13,13 +13,54 @@ import OrdinaryGif2 from "../../../images/about2.gif";
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
 import OridinarySectinTitle from "./OridinarySectinTitle/OridinarySectinTitle";
-import { Link } from "react-router-dom";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 const OrdinarySlider = () => {
   const [isChange, setChange] = useState(true);
   //   const swiperr = useSwiper();
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+
+  useEffect(() => {
+    const nasaInsp = ".nasa-insp";
+    const engThink = ".eng-think";
+
+    gsap.fromTo(
+      [nasaInsp],
+      { y: 270, opacity: 0 },
+      {
+        y: 0,
+        duration: 0.7,
+        opacity: 1,
+        stagger: 0.2,
+        delay: 0.7,
+        scrollTrigger: {
+          trigger: ".ordinary-text-content-wrapper",
+          start: "top 90%",
+          toggleActions: "restart none none reverse",
+        },
+      }
+    );
+    gsap.fromTo(
+      [engThink],
+      { y: 270, opacity: 0 },
+      {
+        y: 0,
+        duration: 0.7,
+        opacity: 1,
+        stagger: 0.2,
+        delay: 0.7,
+        scrollTrigger: {
+          trigger: ".ordinary-text-content-wrapper",
+          start: "top 90%",
+          toggleActions: "restart none none reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       <div className="ordinary-text-content-wrapper w-3/6">

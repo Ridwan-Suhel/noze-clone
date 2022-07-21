@@ -1,6 +1,7 @@
 import React from "react";
 import BoxSection from "./BoxSection/BoxSection";
 import BreakMoldSection from "./BreakMoldSection/BreakMoldSection";
+import ConnectedSection from "./ConnectedSection/ConnectedSection";
 import ConquerSection from "./Conquer/ConquerSection";
 import Faq from "./Faq/Faq";
 import Hero from "./Hero/Hero";
@@ -21,6 +22,7 @@ const Overview = () => {
       <MoreImportantSection />
       <PowerSection />
       <Faq />
+      <ConnectedSection />
     </main>
   );
 };
