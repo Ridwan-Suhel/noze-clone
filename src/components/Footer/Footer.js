@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebook, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SideContact from "../SideContact/SideContact";
 
 const Footer = () => {
+  const [elementClicked, setElementClicked] = useState(true);
   return (
     <footer className="bg-[#F6F5FA] py-8">
       <div className="container mx-auto px-4 lg:px-8">
@@ -46,12 +48,23 @@ const Footer = () => {
                 <Link to="/">Terms of use</Link>
               </li>
               <li>
-                <Link to="/">Privacy policy</Link>
+                <Link
+                  onClick={() => {
+                    setElementClicked(!elementClicked);
+                  }}
+                  to="/"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <SideContact
+        elementClicked={elementClicked}
+        setElementClicked={setElementClicked}
+      />
     </footer>
   );
 };

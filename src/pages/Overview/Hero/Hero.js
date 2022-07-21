@@ -36,6 +36,7 @@ const Hero = ({ joinModal, setJoinModal }) => {
         </div>
       </div>
 
+      {/* join modal */}
       <div
         className={`${
           joinModal ? "opacity-0 invisible" : "opacity-100 visible"

@@ -101,9 +101,10 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+
       <SideBar orderClicked={orderClicked} setOrderClicked={setOrderClicked} />
 
-      <div className="cart-btn fixed top-[50%] translate-y-[-50%] right-0">
+      <div className="cart-btn fixed top-[50%] translate-y-[-50%] right-0 z-[99]">
         <button
           onClick={() => {
             setOrderClicked(!orderClicked);
