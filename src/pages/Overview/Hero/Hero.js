@@ -48,33 +48,33 @@ const Hero = ({ joinModal, setJoinModal }) => {
           joinModal
             ? "opacity-0 invisible top-[-100%]"
             : "opacity-100 visible block top-1/2"
-        } transition-all duration-500 px-8 py-16 bg-white w-2/5 absolute  left-1/2 translate-y-[-50%] translate-x-[-50%]`}
+        } transition-all duration-500 px-4 lg:px-8 py-8 lg:py-16 bg-white w-[350px] lg:w-2/5 absolute  left-1/2 translate-y-[-50%] translate-x-[-50%]`}
         >
           {/* top-1/2 */}
-          <h2 className="text-center text-[#210545] text-[38px] font-medium">
+          <h2 className="text-center text-[#210545] text-xl lg:text-[38px] font-medium">
             Be the first to know
           </h2>
-          <p className="text-center text-[18px] px-12 text-[#6B5A78]">
+          <p className="text-center lg:text-[18px] px-3 lg:px-12 text-[#6B5A78]">
             Leave us your details and we'll keep you up to date about NOZE.
           </p>
 
           <div className="w-full text-center mt-6 mb-2">
             <input
-              className="w-[55%] px-2 py-2 border border-[#D0CBE6] outline-none"
+              className="w-[100%] lg:w-[55%] px-2 py-2 border border-[#D0CBE6] outline-none"
               placeholder="First Name"
               type="text"
             />
           </div>
           <div className="w-full text-center mb-2">
             <input
-              className="w-[55%] px-2 py-2 border border-[#D0CBE6] outline-none"
+              className="w-[100%] lg:w-[55%] px-2 py-2 border border-[#D0CBE6] outline-none"
               placeholder="Email"
               type="email"
             />
           </div>
           <div className="w-full text-center mb-2">
             <select
-              className="w-[55%] px-2 py-2 border border-[#D0CBE6] outline-none"
+              className="w-[100%] lg:w-[55%] px-2 py-2 border border-[#D0CBE6] outline-none"
               name=""
               id=""
             >
@@ -87,7 +87,7 @@ const Hero = ({ joinModal, setJoinModal }) => {
             </select>
           </div>
           <div className="w-full text-center mb-2 mt-6">
-            <button className="bg-[#654A9B] text-white w-[55%] px-2 py-2">
+            <button className="bg-[#654A9B] text-white w-[100%] lg:w-[55%] px-2 py-2">
               Sign me up!
             </button>
           </div>

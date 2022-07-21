@@ -4,7 +4,9 @@ const TermsPage = () => {
   return (
     <section className="pb-12">
       <div className="container mx-auto px-4">
-        <h2 className="title-h2 my-12">Terms of Use</h2>
+        <h2 className="text-[#210545] text-3xl lg:text-[48px] my-12">
+          Terms of Use
+        </h2>
         <p className="text-[18px] text-[#6b5a78] leading-[30px]">
           Thank you for using Noze. Stratuscent Inc., a corporation organized
           under the laws of Canada (“Stratuscent”, “we”, “our”, “us” or the

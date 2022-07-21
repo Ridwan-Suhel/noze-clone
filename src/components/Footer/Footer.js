@@ -6,7 +6,7 @@ import SideContact from "../SideContact/SideContact";
 const Footer = () => {
   const [elementClicked, setElementClicked] = useState(true);
   return (
-    <footer className="bg-[#F6F5FA] py-8">
+    <footer className="bg-[#F6F5FA] py-8 mb-20 lg:mb-0">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="footer-wrapper lg:flex items-center justify-between">
           <ul className="lg:w-2/5 flex justify-center lg:justify-start items-center gap-8">

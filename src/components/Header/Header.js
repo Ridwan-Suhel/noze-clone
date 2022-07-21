@@ -114,6 +114,20 @@ const Header = () => {
           5 <br /> <ShoppingCartIcon className="w-5 h-5 text-white" />{" "}
         </button>
       </div>
+
+      {/* mobile screen sticky content */}
+      <div className="lg:hidden header-call-to-action flex items-center justify-between bg-white fixed bottom-0 left-0 w-full px-8 py-4 border-t z-[400]">
+        <p className="text-[17px]">Order for $240</p>
+        <span
+          className="preOrderBtn"
+          onClick={() => {
+            setOrderClicked(!orderClicked);
+            console.log("clicked", orderClicked);
+          }}
+        >
+          <PrimaryButton btnTxt="Pre Order" />
+        </span>
+      </div>
     </header>
   );
 };

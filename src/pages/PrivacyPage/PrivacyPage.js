@@ -4,7 +4,9 @@ const PrivacyPage = () => {
   return (
     <section className="pb-12">
       <div className="container mx-auto px-4">
-        <h2 className="title-h2 my-12">Privacy Policy</h2>
+        <h2 className="text-[#210545] text-3xl lg:text-[48px] my-12">
+          Privacy Policy
+        </h2>
         <p className="text-[18px] text-[#6b5a78] leading-[30px]">
           At Stratuscent Inc. (“Stratuscent”, “we”, “us” or “our”) we take your
           privacy and the security of your information very seriously. This

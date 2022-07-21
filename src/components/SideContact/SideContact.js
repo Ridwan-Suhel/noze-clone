@@ -14,7 +14,7 @@ const SideContact = ({ elementClicked, setElementClicked }) => {
       elementClicked
         ? "right-[-100%] opacity-0 invisible"
         : "right-0 opacity-100 visible"
-    } w-[450px] rounded-lg fixed bottom-0 border bg-white shadow-xl px-4 py-8 z-[98] transition-all
+    } w-[350px] lg:w-[450px] rounded-lg fixed bottom-0 border bg-white shadow-xl px-4 py-8 z-[98] transition-all
     `}
       >
         <div className="">
