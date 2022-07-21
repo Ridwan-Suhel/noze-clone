@@ -45,7 +45,7 @@ const Header = () => {
                 <NavLink to="/">Overview</NavLink>
               </li>
               <li className="hover:text-[#4d2b90]">
-                <NavLink to="contact">Contact</NavLink>
+                <NavLink to="specs">Specs</NavLink>
               </li>
               <li className="hover:text-[#4d2b90]">
                 <Link to="#test">FAQs</Link>
@@ -72,7 +72,7 @@ const Header = () => {
               className="relative z-10 w-[140px] appearance-none py-1 px-3 focus:outline-none bg-transparent text-[#654a9b] border border-[#654a9b] rounded-full"
             >
               <option value="overview">Overview</option>
-              <option value="contact">Contact</option>
+              <option value="specs">Specs</option>
               <option value="#FAQs">FAQs</option>
             </select>
             <span className="absolute top-[8px] right-2 z-[-10px]">
