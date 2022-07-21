@@ -17,3 +17,14 @@ body {
   color: #210545;
   font-weight: 500;
 }
+header.stickyClass {
+  box-shadow: 0px 15px 80px rgb(0 0 0 / 3%),
+    0px 6.26664px 33.4221px rgb(0 0 0 / 2%),
+    0px 3.35045px 17.869px rgb(0 0 0 / 2%),
+    0px 1.87823px 10.0172px rgb(0 0 0 / 2%),
+    0px 0.997515px 5.32008px rgb(0 0 0 / 1%),
+    0px 0.415088px 2.21381px rgb(0 0 0 / 1%);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}

@@ -4,7 +4,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-const ConnectedSection = () => {
+const ConnectedSection = ({ joinModal, setJoinModal }) => {
   useEffect(() => {
     const connTitle = ".connTitle";
     const connContent = ".connContent";
@@ -38,7 +38,13 @@ const ConnectedSection = () => {
             safe. Breathe easy.
           </p>
           <div className="text-center connBtn">
-            <PrimaryButton btnTxt={"Join the waitlist"} />
+            <span
+              onClick={() => {
+                setJoinModal(!joinModal);
+              }}
+            >
+              <PrimaryButton btnTxt={"Join the waitlist"} />
+            </span>
           </div>
         </div>
       </div>

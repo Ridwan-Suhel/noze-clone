@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
 import NozeHeroImage from "../../../images/NOZE-Hero-1.png";
 import "./Hero.css";
-const Hero = () => {
-  const [joinModal, setJoinModal] = useState(true);
-
+const Hero = ({ joinModal, setJoinModal }) => {
   return (
     <section className="max-h-[90vh] overflow-hidden lg:pt-12">
       <div className="container mx-auto px-4 lg:px-16">

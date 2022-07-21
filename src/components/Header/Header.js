@@ -11,22 +11,19 @@ import { useNavigate } from "react-router-dom";
 import { Scrollchor } from "react-scrollchor/lib/scrollchor";
 import SideBar from "../SideBar/SideBar";
 
-// var scrollObject = {};
-// window.onscroll = getScrollPosition;
+let scrollObject = {};
+window.onscroll = getScrollPosition;
 
-// function getScrollPosition() {
-//   scrollObject = {
-//     x: window.pageXOffset,
-//     y: window.pageYOffset,
-//   };
-//   // If you want to check distance
-//   if (scrollObject.y > 200) {
-//     // add class
-//     console.log("add class");
-//   } else {
-//     console.log("remove class");
-//   }
-// }
+function getScrollPosition() {
+  scrollObject = {
+    y: window.pageYOffset,
+  };
+  if (scrollObject.y > 0) {
+    document.getElementById("header").classList.add("stickyClass");
+  } else {
+    document.getElementById("header").classList.remove("stickyClass");
+  }
+}
 
 const Header = () => {
   const [orderClicked, setOrderClicked] = useState(true);
@@ -37,7 +34,10 @@ const Header = () => {
     navigate(`/${value}`);
   }
   return (
-    <header className="border-[#d0cbe6] border-b min-h-[65px] flex items-center px-6 md:px-0">
+    <header
+      id="header"
+      className="bg-white z-[100] top-0 border-[#d0cbe6] border-b min-h-[65px] flex items-center px-6 md:px-0"
+    >
       <div className="container mx-auto">
         <nav className="main-nav flex items-center gap-8 justify-between">
           <Link to="/" className="">
