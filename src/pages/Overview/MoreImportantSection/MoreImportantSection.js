@@ -35,16 +35,15 @@ const MoreImportantSection = () => {
   return (
     <section className="pt-36">
       <div className="title">
-        <h2 className="title-h2 text-center">
+        <h2 className="text-3xl lg:title-h2 text-center">
           What's more important, form <br />
           or function?
         </h2>
-        <p className="text-center my-12 text-[#6b5a78]">
+        <p className="text-center my-4 lg:my-12 text-[#6b5a78]">
           We didn't think it was fair to have to choose.
         </p>
       </div>
       <div className="imp-vdo-area vdoTest" id="">
-        {/* <span>{scrollPosition}</span> */}
         <video
           className={scroll ? "claseeadded" : "classRemoved"}
           autoPlay={scroll ? "autoPlay" : false}

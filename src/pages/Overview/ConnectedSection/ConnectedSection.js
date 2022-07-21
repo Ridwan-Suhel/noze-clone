@@ -28,12 +28,12 @@ const ConnectedSection = ({ joinModal, setJoinModal }) => {
   }, []);
   return (
     <section className="pt-24 pb-48">
-      <div className="container mx-auto mx-4">
+      <div className="container mx-auto lg:mx-4">
         <div className="connectedWrapper">
-          <h2 className="title-h2 text-center connTitle">
+          <h2 className="text-2xl lg:text-[48px] lg:leading-[49px] text-[#210545] text-center connTitle">
             Stay connected with NOZE
           </h2>
-          <p className="connContent my-8 w-[442px] font-medium mx-auto text-center text-[#6b5a78] text-[18px] text-leading-[30px]">
+          <p className="connContent my-4 lg:my-8 lg:w-[442px] font-medium mx-auto text-center text-[#6b5a78] text-[18px] text-leading-[30px]">
             NOZE is an AI powered air quality monitor that works to keep you
             safe. Breathe easy.
           </p>

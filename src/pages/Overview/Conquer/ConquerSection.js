@@ -28,18 +28,18 @@ const ConquerSection = () => {
   }, []);
 
   return (
-    <section className="pt-36">
-      <div className="conq-wrapper flex gap-4">
-        <div className="vdo-area w-1/2">
+    <section className="pt-12 lg:pt-36">
+      <div className="px-4 lg:px-0 conq-wrapper flex lg:flex-row flex-col flex-col-reverse gap-4">
+        <div className="vdo-area lg:w-1/2">
           <video className="" autoPlay muted loop playsInline>
             <source src={conqVdo1} type="video/mp4" />
           </video>
         </div>
-        <div className="txt-content w-1/2">
-          <h2 className="text-[#210545] text-[48px] font-medium conqTitle">
+        <div className="txt-content lg:w-1/2">
+          <h2 className="text-[#210545] text-3xl lg:text-[48px] font-medium conqTitle">
             Conquer the Virus
           </h2>
-          <p className="text-[#6b5a78] text-[18px] mt-12 conqContent">
+          <p className="text-[#6b5a78] text-[18px] mt-4 lg:mt-12 conqContent">
             Noze tracks the airborne markers (VOCs) associated with the
             Coronavirus family. Our AI uses that information to deliver a
             real-time risk index that will not only tell you if your space is

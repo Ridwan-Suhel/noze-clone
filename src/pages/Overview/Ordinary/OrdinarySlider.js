@@ -62,8 +62,8 @@ const OrdinarySlider = () => {
   }, []);
 
   return (
-    <>
-      <div className="ordinary-text-content-wrapper w-3/6">
+    <div className="lg:flex lg:gap-4">
+      <div className="ordinary-text-content-wrapper w-full lg:w-3/6">
         <OridinarySectinTitle />
         {/* ordinary section desktop left side */}
         <div
@@ -123,7 +123,7 @@ const OrdinarySlider = () => {
           disableOnInteraction: false,
         }}
         modules={[Navigation, Pagination, Autoplay]}
-        className="mySwiper w-3/6"
+        className="mySwiper w-full lg:w-3/6 mt-12 lg:mt-0 "
         onInit={(swiper) => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
@@ -135,9 +135,9 @@ const OrdinarySlider = () => {
         }}
       >
         <SwiperSlide>
-          <div className="w-[500px] h-[470px] rounded-full">
+          <div className="w-[100%] h-[250px] lg:w-[500px] lg:h-[470px] rounded-full">
             <video
-              className="rounded-full w-[500px] h-[470px] scale-150"
+              className="rounded-[100px] lg:rounded-full w-[100%] h-[250px] lg:w-[500px] lg:h-[470px] lg:scale-150"
               autoPlay
               muted
               loop
@@ -145,7 +145,7 @@ const OrdinarySlider = () => {
             >
               <source src={OrdinaryVdo} type="video/mp4" />
             </video>
-            <em className="text-center block mt-[-60px] relative z-10">
+            <em className="text-center block lg:mt-[-60px] relative z-10">
               <a
                 href="https://www.stratuscent.com/"
                 rel="noreferrer"
@@ -157,16 +157,16 @@ const OrdinarySlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[500px] h-[470px] rounded-full">
+          <div className="w-[100%] h-[250px] lg:w-[500px] lg:h-[470px] rounded-full">
             <img
-              className="rounded-full w-[500px] h-[470px]"
+              className="rounded-[100px] lg:rounded-full w-[100%] h-[250px] lg:w-[500px] lg:h-[470px]"
               src={OrdinaryGif2}
               alt="Gif Img"
             />
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 

@@ -26,13 +26,13 @@ const MattersSection = () => {
     );
   }, []);
   return (
-    <section className="pt-28">
-      <div className="container mx-auto px-16">
+    <section className="pt-12 lg:pt-28">
+      <div className="container mx-auto px-4 lg:px-16">
         <div className="matterWrapper">
-          <h2 className="text-[48px] text-[#210545] text-center matterTitle">
+          <h2 className="text-3xl lg:text-[48px] text-[#210545] text-center matterTitle">
             What you can't see matters.
           </h2>
-          <p className="text-[#6b5a78] text-center mt-8 matterContent">
+          <p className="text-[#6b5a78] text-center mt-4 lg:mt-8 matterContent">
             NOZE also monitors a range of other pollutants to help make indoor{" "}
             <br />
             spaces safer places to live, work, and visit.

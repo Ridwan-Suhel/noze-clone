@@ -95,21 +95,29 @@ const PowerSection = () => {
   }, []);
 
   return (
-    <section className="pt-24">
+    <section className="pt-12 lg:pt-24">
       <div className="container mx-auto px-4 lg:px-10">
-        <div className="section-wrapper flex gap-5 h-[250vh]">
-          <div className="w-2/6 incedible-title mt-10 h-[100vh]">
+        <div className="section-wrapper lg:flex gap-5 h-[250vh]">
+          <div className="hidden lg:block lg:w-2/6 incedible-title mt-10 h-[100vh]">
             <h2 className="title-h2 pr-20">
               Incredible power, right under your NOZE
             </h2>
           </div>
-          <div className="w-4/6 image-box-wrapper">
+
+          {/* mobile screen title  */}
+          <div className="block lg:hidden mb-12">
+            <h2 className="text-3xl lg:title-h2 text-center">
+              Incredible power, right under your NOZE
+            </h2>
+          </div>
+
+          <div className="lg:w-4/6 image-box-wrapper">
             {/* single-box */}
-            <div className="single-box-content box-1">
-              <div className="box w-[370px]">
-                <div className="img-wrapper bg-[#D0CBE6] rounded-full w-full h-[370px] flex items-center justify-center">
+            <div className="single-box-content box-1 mb-12 lg:mb-0">
+              <div className="box lg:w-[370px]">
+                <div className="mx-auto lg:ml-auto img-wrapper bg-[#D0CBE6] rounded-full w-[300px] h-[300px] lg:w-[370px] lg:h-[370px] flex items-center justify-center">
                   <img
-                    className="object-cover h-[320px]"
+                    className="object-cover h-[200px] lg:h-[320px]"
                     src={checkinImg}
                     alt="Check in img"
                   />
@@ -126,11 +134,11 @@ const PowerSection = () => {
               </div>
             </div>
             {/* single-box */}
-            <div className="single-box-content box-2-wrapper">
-              <div className="box w-[370px] ml-auto box-2">
-                <div className="img-wrapper bg-[#D0CBE6] rounded-full w-full h-[370px] flex items-center justify-center">
+            <div className="single-box-content box-2-wrapper mb-12 lg:mb-0">
+              <div className="box w-full lg:w-[370px] lg:ml-auto box-2">
+                <div className="mx-auto lg:ml-auto img-wrapper bg-[#D0CBE6] rounded-full w-[300px] h-[300px] lg:w-[370px] lg:h-[370px] flex items-center justify-center">
                   <img
-                    className="object-cover h-[320px]"
+                    className="object-cover h-[200px] lg:h-[320px]"
                     src={trackItImg}
                     alt="Check in img"
                   />
@@ -148,10 +156,10 @@ const PowerSection = () => {
             </div>
             {/* single-box */}
             <div className="single-box-content box-3-wrapper">
-              <div className="box w-[370px] box-3">
-                <div className="img-wrapper bg-[#D0CBE6] rounded-full w-full h-[370px] flex items-center justify-center">
+              <div className="box w-full lg:w-[370px] box-3">
+                <div className="mx-auto lg:ml-auto img-wrapper bg-[#D0CBE6] rounded-full w-[300px] h-[300px] lg:w-[370px] lg:h-[370px] flex items-center justify-center">
                   <img
-                    className="object-cover h-[320px]"
+                    className="object-cover h-[200px] lg:h-[320px]"
                     src={shareItImg}
                     alt="Check in img"
                   />
@@ -169,17 +177,20 @@ const PowerSection = () => {
             </div>
           </div>
         </div>
+        {/* get noze area */}
         <div className="get-noze-content-wrapper pt-20">
-          <div className="flex justify-between ">
-            <div className="w-1/2">
+          <div className="lg:flex justify-between ">
+            <div className="lg:w-1/2 mt-48 lg:mt-0">
               <img
-                className="mx-auto rounded-full w-[400px] h-[400px] object-cover"
+                className="mx-auto rounded-full w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] object-cover"
                 src={getNoze}
                 alt=""
               />
             </div>
-            <div className="w-1/2 pr-18">
-              <h2 className="title-h2">Wondering if you should get a NOZE?</h2>
+            <div className="lg:w-1/2 lg:pr-18">
+              <h2 className="text-3xl lg:text-[48px] lg:leading-[49px] text-[#210545] lg:text-left mt-8 lg:mt-0 ">
+                Wondering if you should get a NOZE?
+              </h2>
               <p className="text-[18px] text-[#373f41] my-5">
                 Any way you slice it, it's a no brainer.
               </p>

@@ -25,3 +25,21 @@
   font-weight: 600;
   color: #2c0a59;
 }
+
+@media (max-width: 476px) {
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    color: transparent;
+    opacity: 1;
+    background: rgb(161, 159, 159) !important;
+    margin-bottom: 10px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #2c0a59 !important;
+  }
+}

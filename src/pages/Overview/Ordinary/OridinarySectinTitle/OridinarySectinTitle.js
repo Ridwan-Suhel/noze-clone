@@ -26,12 +26,12 @@ const OridinarySectinTitle = () => {
   }, []);
   return (
     <div className="ordinaryTitle">
-      <h2 className="text-[#210545] text-[48px] leading-[48px] font-medium">
-        Anything but <br />
+      <h2 className="text-[#210545] text-3xl lg:text-[48px] leading-[48px] font-medium">
+        Anything but <br className="hidden lg:block" />
         ordinary.
       </h2>
-      <p className="text-[18px] text-[#6b5a78] my-8">
-        Some would say it's out of this world. That’s not far off.
+      <p className="text-[18px] text-[#6b5a78] lg:my-8 pb-8 lg:pb-0">
+        Some would say it's out of this world. That's not far off.
       </p>
     </div>
   );

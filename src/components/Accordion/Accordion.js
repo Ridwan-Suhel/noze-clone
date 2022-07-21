@@ -30,7 +30,7 @@ const Accordion = () => {
           }`}
         >
           <div className="flex items-center justify-between transition-all ">
-            <h2 className="text-[#210545] font-[700] text-[20px] ">
+            <h2 className="text-[#210545] font-medium lg:font-[700] text-[18px] lg:text-[20px] ">
               {item.question}
             </h2>
             <span
