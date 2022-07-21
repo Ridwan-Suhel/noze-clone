@@ -42,10 +42,10 @@ const Footer = () => {
             <div className="footer-brand-name text-sm pl-16">2021 Noze</div>
             <ul className="flex items-center gap-8 text-sm">
               <li>
-                <Link to="/">Privacy policy</Link>
+                <Link to="/privacy">Privacy policy</Link>
               </li>
               <li>
-                <Link to="/">Terms of use</Link>
+                <Link to="/terms">Terms of use</Link>
               </li>
               <li>
                 <Link
