@@ -10,7 +10,7 @@ const SideBar = ({ orderClicked, setOrderClicked }) => {
       orderClicked
         ? "right-[-100%] opacity-0 invisible"
         : "right-0 opacity-100 visible"
-    } w-[340px] h-screen fixed top-0  bg-white shadow-lg p-4 z-[500] transition-all
+    } w-[340px] h-screen fixed top-0  bg-white shadow-xl p-4 z-[500] transition-all
     `}
     >
       <div className="flex items-center justify-between py-6">

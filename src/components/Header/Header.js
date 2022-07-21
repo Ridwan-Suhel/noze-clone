@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
-import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import {
+  ChevronDownIcon,
+  ChevronUpIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
 import { Scrollchor } from "react-scrollchor/lib/scrollchor";
 import SideBar from "../SideBar/SideBar";
@@ -98,6 +102,17 @@ const Header = () => {
         </nav>
       </div>
       <SideBar orderClicked={orderClicked} setOrderClicked={setOrderClicked} />
+
+      <div className="cart-btn fixed top-[50%] translate-y-[-50%] right-0">
+        <button
+          onClick={() => {
+            setOrderClicked(!orderClicked);
+          }}
+          className="text-white bg-[#654a9b] hover:bg-[#5b438c] py-3 px-3"
+        >
+          5 <br /> <ShoppingCartIcon className="w-5 h-5 text-white" />{" "}
+        </button>
+      </div>
     </header>
   );
 };
