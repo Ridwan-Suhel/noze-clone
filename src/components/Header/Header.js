@@ -5,6 +5,7 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
 import { Scrollchor } from "react-scrollchor/lib/scrollchor";
+import SideBar from "../SideBar/SideBar";
 
 // var scrollObject = {};
 // window.onscroll = getScrollPosition;
@@ -24,6 +25,8 @@ import { Scrollchor } from "react-scrollchor/lib/scrollchor";
 // }
 
 const Header = () => {
+  const [orderClicked, setOrderClicked] = useState(true);
+
   const [open, setOpen] = useState(true);
   let navigate = useNavigate();
   function handleChange(value) {
@@ -56,7 +59,15 @@ const Header = () => {
             {/* lg screen right side contents */}
             <div className="hidden header-call-to-action lg:flex items-center gap-8">
               <p className="text-[17px]">Order for $240</p>
-              <PrimaryButton btnTxt="Pre Order" />
+              <span
+                className="preOrderBtn"
+                onClick={() => {
+                  setOrderClicked(!orderClicked);
+                  console.log("clicked", orderClicked);
+                }}
+              >
+                <PrimaryButton btnTxt="Pre Order" />
+              </span>
             </div>
           </div>
 
@@ -86,6 +97,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
+      <SideBar orderClicked={orderClicked} setOrderClicked={setOrderClicked} />
     </header>
   );
 };

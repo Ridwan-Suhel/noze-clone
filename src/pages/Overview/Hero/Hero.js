@@ -22,7 +22,6 @@ const Hero = () => {
               <span
                 onClick={() => {
                   setJoinModal(!joinModal);
-                  console.log("clicked", joinModal);
                 }}
               >
                 <PrimaryButton btnTxt="Join the waitlist" />
@@ -96,7 +95,6 @@ const Hero = () => {
           <span
             onClick={() => {
               setJoinModal(!joinModal);
-              console.log("clicked", joinModal);
             }}
             className="closeBtn absolute top-4 right-4 cursor-pointer"
           >
