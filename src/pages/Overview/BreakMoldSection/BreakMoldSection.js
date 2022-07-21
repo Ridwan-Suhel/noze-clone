@@ -42,7 +42,7 @@ const BreakMoldSection = () => {
             </p>
           </div>
           <div className="vdo-area w-1/2">
-            <video className="" autoPlay muted loop playsinline>
+            <video className="" autoPlay muted loop playsInline>
               <source src={breakMold} type="video/mp4" />
             </video>
           </div>

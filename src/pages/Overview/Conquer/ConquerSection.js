@@ -31,7 +31,7 @@ const ConquerSection = () => {
     <section className="pt-36">
       <div className="conq-wrapper flex gap-4">
         <div className="vdo-area w-1/2">
-          <video className="" autoPlay muted loop playsinline>
+          <video className="" autoPlay muted loop playsInline>
             <source src={conqVdo1} type="video/mp4" />
           </video>
         </div>

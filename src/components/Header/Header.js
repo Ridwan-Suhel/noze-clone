@@ -4,6 +4,7 @@ import logo from "../../images/logo.svg";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
+import { Scrollchor } from "react-scrollchor/lib/scrollchor";
 
 // var scrollObject = {};
 // window.onscroll = getScrollPosition;
@@ -42,13 +43,13 @@ const Header = () => {
           <div className="hidden nav-item-wrapper lg:flex items-center justify-between w-full">
             <ul className="flex items-center gap-8 text-[15px] text-[#b9b0e4]">
               <li className="hover:text-[#4d2b90]">
-                <NavLink to="/">Overview</NavLink>
+                <NavLink to="/overview">Overview</NavLink>
               </li>
               <li className="hover:text-[#4d2b90]">
                 <NavLink to="specs">Specs</NavLink>
               </li>
               <li className="hover:text-[#4d2b90]">
-                <Link to="#test">FAQs</Link>
+                <Scrollchor to="#faqs">FAQs</Scrollchor>
               </li>
             </ul>
 

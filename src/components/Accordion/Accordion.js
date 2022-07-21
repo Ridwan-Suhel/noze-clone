@@ -21,6 +21,7 @@ const Accordion = () => {
     <div className="accordin">
       {data.map((item, i) => (
         <div
+          key={item.id}
           onClick={() => toggle(i)}
           className={`group focus:transition accr-box mb-5 py-5 px-8  bg-white rounded-[30px] cursor-pointer hover:shadow-xl transition-all duration-500 ${
             selected === i

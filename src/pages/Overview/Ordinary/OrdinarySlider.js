@@ -141,7 +141,7 @@ const OrdinarySlider = () => {
               autoPlay
               muted
               loop
-              playsinline
+              playsInline
             >
               <source src={OrdinaryVdo} type="video/mp4" />
             </video>
