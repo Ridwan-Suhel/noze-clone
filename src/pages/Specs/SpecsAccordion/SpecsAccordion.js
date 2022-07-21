@@ -132,7 +132,7 @@ const SpecsAccordion = () => {
           }`}
         >
           <div className="flex items-center justify-between transition-all ">
-            <h2 className="text-[#210545] font-[700] text-[20px] ">
+            <h2 className="text-[#210545] lg:font-[700] font-medium text-[20px] ">
               {item.question}
             </h2>
             <span

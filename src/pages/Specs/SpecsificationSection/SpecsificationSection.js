@@ -5,9 +5,11 @@ const SpecsificationSection = () => {
   return (
     <section>
       <div className="container mx-auto px-4 pt-20 pb-32">
-        <div className="flex justify-between">
-          <h2 className="title-h2 w-2/5">Specifications</h2>
-          <div className="w-3/5">
+        <div className="lg:flex justify-between">
+          <h2 className="text-[#210545] text-3xl lg:text-[48px] lg:w-2/5 lg:mb-0 mb-8">
+            Specifications
+          </h2>
+          <div className="lg:w-3/5">
             <SpecsAccordion />
           </div>
         </div>

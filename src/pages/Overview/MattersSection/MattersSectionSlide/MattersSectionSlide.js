@@ -58,10 +58,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Clouds our thinking, lowers productivity &amp; affects our
                 sleep.
               </h2>
@@ -80,10 +80,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Irritates our noses and throats, amplifies allergies &amp;
                 triggers asthma.
               </h2>
@@ -101,10 +101,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Irritates the eyes, nose, throat &amp; skin - and is often
                 linked to cancer.
               </h2>
@@ -123,10 +123,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Causes permanent damage to our respiratory system.
               </h2>
               <p className="text-[#f3f2f8] text-[16px] text-center px-4 lg:px-40 mt-4 lg:mt-40">
@@ -144,10 +144,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Irritates our lungs causing coughing and shortness of breath.
               </h2>
               <p className="text-[#f3f2f8] text-[16px] text-center px-4 lg:px-40 mt-4 lg:mt-40">
@@ -165,10 +165,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Irritates our lungs, aggravates allergies &amp; can increase
                 virus spread.
               </h2>
@@ -187,10 +187,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Causes headaches, nausea &amp; irritates our lungs.
               </h2>
               <p className="text-[#f3f2f8] text-[16px] text-center px-4 lg:px-40 mt-4 lg:mt-40">
@@ -208,10 +208,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Seeps into furniture and can linger in a space for a long time.
               </h2>
               <p className="text-[#f3f2f8] text-[16px] text-center px-4 lg:px-40 mt-4 lg:mt-40">
@@ -229,10 +229,10 @@ const MattersSectionSlide = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-            className="p-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] mx-auto lg:ml-auto py-28"
+            className="px-8 w-[95%] lg:w-3/4 lg:h-[528px] rounded-[300px] ml-auto py-28"
           >
             <div>
-              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 leading-[45px] font-normal">
+              <h2 className="text-[20px] leading-[19px] lg:text-[40px] text-[#f3f2f8] text-center px-4 lg:px-12 lg:leading-[45px] font-normal">
                 Causes mold growth that triggers asthma &amp; irritates our
                 ears, nose and throat.
               </h2>
