@@ -2,6 +2,7 @@ import React from "react";
 import BoxSection from "./BoxSection/BoxSection";
 import BreakMoldSection from "./BreakMoldSection/BreakMoldSection";
 import ConquerSection from "./Conquer/ConquerSection";
+import Faq from "./Faq/Faq";
 import Hero from "./Hero/Hero";
 import MattersSection from "./MattersSection/MattersSection";
 import MoreImportantSection from "./MoreImportantSection/MoreImportantSection";
@@ -19,7 +20,7 @@ const Overview = () => {
       <MattersSection />
       <MoreImportantSection />
       <PowerSection />
-      <section className="w-full h-screen"></section>
+      <Faq />
     </main>
   );
 };

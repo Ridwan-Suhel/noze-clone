@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import gsap, { Power3 } from "gsap";
+import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import checkinImg from "../../../images/6.png";
 import trackItImg from "../../../images/8.png";
 import shareItImg from "../../../images/9.png";
+import getNoze from "../../../images/get-noze.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const PowerSection = () => {
@@ -12,6 +13,7 @@ const PowerSection = () => {
     const box1 = ".box-1";
     const box2 = ".box-2";
     const box3 = ".box-3";
+    const getNozeContent = ".get-noze-content-wrapper";
 
     gsap.to([incedibleTitle], {
       y: 0,
@@ -25,8 +27,7 @@ const PowerSection = () => {
         end: "bottom 90%",
         toggleActions: "restart none none reverse",
         pin: ".incedible-title",
-        markers: true,
-        pinSpacing: true,
+
         // scrub: 4,
       },
     });
@@ -76,13 +77,28 @@ const PowerSection = () => {
         },
       }
     );
+    gsap.fromTo(
+      [getNozeContent],
+      { y: 120, opacity: 0 },
+      {
+        y: 0,
+        duration: 0.7,
+        opacity: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".get-noze-content-wrapper",
+          start: "top 90%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
   }, []);
 
   return (
-    <section className="py-24">
-      <div className="container mx-auto px-4">
-        <div className="section-wrapper flex gap-5 ">
-          <div className="w-2/6 incedible-title mt-10 ">
+    <section className="pt-24">
+      <div className="container mx-auto px-4 lg:px-10">
+        <div className="section-wrapper flex gap-5 h-[250vh]">
+          <div className="w-2/6 incedible-title mt-10 h-[100vh]">
             <h2 className="title-h2 pr-20">
               Incredible power, right under your NOZE
             </h2>
@@ -150,6 +166,36 @@ const PowerSection = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="get-noze-content-wrapper pt-20">
+          <div className="flex justify-between ">
+            <div className="w-1/2">
+              <img
+                className="mx-auto rounded-full w-[400px] h-[400px] object-cover"
+                src={getNoze}
+                alt=""
+              />
+            </div>
+            <div className="w-1/2 pr-18">
+              <h2 className="title-h2">Wondering if you should get a NOZE?</h2>
+              <p className="text-[18px] text-[#373f41] my-5">
+                Any way you slice it, it's a no brainer.
+              </p>
+              <p className="text-[18px] text-[#373f41]">
+                1. Reduce Virus spread <br />
+                2. Watch out for Mold
+                <br />
+                3. Keep Asthma in check
+                <br />
+                4. Avoid Allergy flare ups
+                <br />
+                5. Improve your Sleep
+                <br />
+                6. Boost Productivity &amp; Focus
+                <br />
+              </p>
             </div>
           </div>
         </div>
